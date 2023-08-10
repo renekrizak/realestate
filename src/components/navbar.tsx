@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 import "../style/compStyles/navbar.scss";
@@ -34,6 +34,7 @@ const navLinks: NavigationLink[] = [
 
 const Navbar: React.FC = () => {
   const [hamburger, setHamburger] = useState<boolean>(false);
+  const location = useLocation();
 
   const hamburgerMenu = () => {
     setHamburger(!hamburger);
@@ -44,7 +45,12 @@ const Navbar: React.FC = () => {
       <nav>
         <ul>
           {navLinks.map((linkItem) => (
-            <li key={linkItem.link}>
+            <li
+              key={linkItem.link}
+              className={
+                location.pathname === linkItem.link ? "active-link" : ""
+              }
+            >
               <Link key={linkItem.link} to={linkItem.link}>
                 {linkItem.name}
               </Link>
