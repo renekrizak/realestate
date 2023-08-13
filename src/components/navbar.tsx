@@ -24,7 +24,7 @@ const navLinks: NavigationLink[] = [
   },
   {
     name: "Services",
-    link: "/services,",
+    link: "/services",
   },
   {
     name: "Blogs",
