@@ -10,17 +10,36 @@
   align-items: center;
   display: flex;
   margin-bottom: 1rem;
-  img {
-    border-radius: 3rem;
-    overflow: hidden;
-    max-width: 80%;
-    max-height: 80%;
-    object-fit: cover;
-  }
+
   button {
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $gray;
+      svg {
+        fill: white;
+      }
+    }
+  }
+}
+
+.slideshow-image-inner {
+  width: 90%;
+  height: 90%;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    border-radius: 3rem;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 35rem;
+    object-fit: cover;
   }
 }
 
@@ -43,5 +62,25 @@
   .current-image {
     background-color: $blue;
     color: $blue;
+  }
+}
+
+@media (max-width: 900px) {
+  .slideshow-image {
+    height: 100%;
+    button {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .slideshow {
+    height: 100%;
+  }
+  .slideshow-image-inner {
+    img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 20rem;
+    }
   }
 }

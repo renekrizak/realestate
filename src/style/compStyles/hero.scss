@@ -70,6 +70,7 @@
     width: 80%;
     color: $gray;
     line-height: 2;
+    padding-bottom: 2rem;
   }
 }
 
@@ -82,4 +83,170 @@
 .search-property {
   width: 37%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+
+.happy-customers-wrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+}
+
+.happy-customers {
+  width: 40rem;
+  background-color: white;
+  height: 7rem;
+  border-radius: 4rem;
+  padding: 0 3rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(114, 116, 117, 0.12) 0px 2px 4px 0px,
+    rgba(131, 139, 143, 0.32) 0px 2px 16px 0px;
+}
+
+.happy-customers-list {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  li {
+    width: 20%;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 9999px;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 4rem;
+    max-width: 100%;
+    max-height: 4rem;
+  }
+}
+
+.happy-customers-text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    padding: 0;
+    color: $black;
+    font-size: 1.5rem;
+  }
+}
+
+.listings-card-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+}
+
+.listings-card {
+  width: 40rem;
+  background-color: white;
+  height: 7rem;
+  border-radius: 4rem;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(114, 116, 117, 0.12) 0px 2px 4px 0px,
+    rgba(131, 139, 143, 0.32) 10px 8px 8px 0px;
+}
+
+.listings-card-featured-property {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+  }
+}
+
+.listings-card-text {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .background-gradient {
+    background: none;
+  }
+  .hero {
+    height: auto;
+  }
+
+  .hero-layout {
+    width: 90%;
+    overflow: visible;
+  }
+  .hero-content {
+    flex-direction: column;
+    height: 150vh;
+  }
+  .image-slideshow-and-text {
+    width: 100%;
+    height: 45%;
+    padding: 0;
+    h1 {
+      font-size: 3rem;
+      width: 100%;
+    }
+    h2 {
+      overflow: hidden;
+    }
+    h3 {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .search-property {
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+    height: 55%;
+  }
+  .image-slideshow-container {
+    width: 100%;
+    height: 45%;
+  }
+  .happy-customers-wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .happy-customers-text {
+    h3 {
+      text-align: center;
+    }
+  }
+  .happy-customers {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .listings-card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }

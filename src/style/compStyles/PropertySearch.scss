@@ -1,0 +1,113 @@
+@use "../styles.scss" as *;
+
+.property-search-container {
+  width: 100%;
+  height: 80%;
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.property-search-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 95%;
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.sale-rent-options {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.for-sale {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.for-rent {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.property-search-selected {
+  border-bottom: 2px solid $purple;
+  h2 {
+    color: $purple;
+  }
+}
+
+.sale-rent-inputs {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 5vh;
+    input {
+      width: 80%;
+      border: none;
+      height: 5rem;
+      background-color: $gray-light;
+      border-radius: 16px;
+      padding: 0 2rem;
+    }
+    select {
+      width: 80%;
+      border: none;
+      height: 5rem;
+      background-color: $gray-light;
+      border-radius: 16px;
+      padding: 0 2rem;
+    }
+  }
+  button {
+    width: 80%;
+    height: 15%;
+    border: none;
+    background-color: $blue-dark;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    svg {
+      fill: white;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .property-search-container {
+    padding-top: 0;
+  }
+  .property-search-content {
+    margin-top: 1vh;
+    width: 95%;
+  }
+}

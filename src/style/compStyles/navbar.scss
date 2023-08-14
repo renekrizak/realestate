@@ -287,10 +287,11 @@ nav {
   }
   nav {
     padding: 0 2rem;
-
+    z-index: 20000;
     ul {
       order: 3;
       justify-content: flex-end;
+
       a {
         display: none;
       }
