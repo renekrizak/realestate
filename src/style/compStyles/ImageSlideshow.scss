@@ -84,3 +84,11 @@
     }
   }
 }
+
+@media (max-width: 900px) and (min-width: 500px) {
+  .slideshow-image-inner {
+    img {
+      max-height: 30rem;
+    }
+  }
+}
