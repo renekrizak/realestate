@@ -1,0 +1,87 @@
+@use "../styles.scss" as *;
+
+.services-section {
+  width: 100%;
+  height: 80rem;
+  background-color: rgba(212, 212, 212, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  h2 {
+    color: $gray;
+    font-size: 2rem;
+  }
+  h1 {
+    color: $black;
+    font-size: 4rem;
+  }
+}
+
+.services-cards {
+  width: 100%;
+  height: 45rem;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  .service-card {
+    width: 25%;
+    height: 85%;
+    background-color: white;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .service-card-image {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .service-card-image-container {
+        background-color: $blue;
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 0px 10px 28px -5px rgba(67, 97, 238, 0.65);
+        -moz-box-shadow: 0px 10px 28px -5px rgba(67, 97, 238, 0.65);
+        box-shadow: 0px 10px 28px -5px rgba(67, 97, 238, 0.65);
+        img {
+          max-width: 50%;
+          max-height: 50%;
+        }
+      }
+    }
+    .service-card-text {
+      width: 60%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        color: $gray;
+        text-align: center;
+        line-height: 1.5;
+        word-spacing: 0.25rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
