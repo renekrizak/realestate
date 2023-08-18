@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Listings from "./pages/Listings";
 import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
+import { ListingData } from "./data/ListingsData";
 
 function App() {
   return (
