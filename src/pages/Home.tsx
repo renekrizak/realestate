@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Hero from "../components/Hero";
 import WhoAreWe from "../components/WhoAreWe";
-import Listings from "../components/Listings";
+import ListingsHome from "../components/ListingsHome";
 import OurServices from "../components/OurServices";
 import TownAreas from "../components/TownAreas";
 import OurTeam from "../components/OurTeam";
@@ -16,7 +16,7 @@ const Home = () => {
       <Navbar></Navbar>
       <Hero></Hero>
       <WhoAreWe></WhoAreWe>
-      <Listings></Listings>
+      <ListingsHome></ListingsHome>
       <OurServices></OurServices>
       <TownAreas></TownAreas>
       <OurTeam></OurTeam>

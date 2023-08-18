@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Listings from "./pages/Listings";
 import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
+import PropertyDetailed from "./pages/PropertyDetailed";
 import { ListingData } from "./data/ListingsData";
 
 function App() {
@@ -16,6 +17,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/listings" element={<Listings />} />
+          {ListingData.map((listingData) => (
+            <Route
+              key={listingData.id}
+              path={`/listings/${listingData.id.toString()}`}
+              element={<PropertyDetailed property={listingData} />}
+            />
+          ))}
           <Route path="/services" element={<Services />} />
           <Route path="/Blogs" element={<Blogs />} />
         </Routes>

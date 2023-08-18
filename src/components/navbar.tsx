@@ -9,7 +9,7 @@ interface NavigationLink {
   link: string;
 }
 
-const navLinks: NavigationLink[] = [
+export const navLinks: NavigationLink[] = [
   {
     name: "Home",
     link: "/",

@@ -2,58 +2,20 @@ import React, { useState } from "react";
 import "../style/compStyles/listings.scss";
 import { ListingData } from "../data/ListingsData";
 
-import listings1 from "../assets/listings/listings1.jpg";
-import listings2 from "../assets/listings/listings2.jpg";
-import listings3 from "../assets/listings/listings3.jpg";
+export const formattedPrice = ({ price }: { price: number }) =>
+  new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(price);
 
 const ListingsHome: React.FC = () => {
   const [propertyOption, setPropertyOption] = useState("All");
   const handleOptionClick = (option: string) => {
     setPropertyOption(option);
   };
-  interface Property {
-    id: number;
-    image: string;
-    address: string;
-    bedrooms: number;
-    bathrooms: number;
-    price: string;
-    rent: string;
-    description: string;
-  }
 
-  const properties: Property[] = [
-    {
-      id: 1,
-      image: listings1,
-      address: "9300 F ST OAKLAND CA 946033-1222 USA",
-      bedrooms: 8,
-      bathrooms: 6,
-      price: "1,299,500.00",
-      rent: "4,800",
-      description: "Exquisite villa: 8 beds, 6 baths, infinity pool",
-    },
-    {
-      id: 2,
-      image: listings2,
-      address: "9300 F ST OAKLAND CA 946033-1222 USA",
-      bedrooms: 5,
-      bathrooms: 3,
-      price: "999,999.00",
-      rent: "3,215",
-      description: "Secluded paradise: 5 beds, private beach access.",
-    },
-    {
-      id: 3,
-      image: listings3,
-      address: "9300 F ST OAKLAND CA 946033-1222 USA",
-      bedrooms: 7,
-      bathrooms: 3,
-      price: "540,000.00",
-      rent: "5,400",
-      description: "Elegant 7-bed villa, Mediterranean charm.",
-    },
-  ];
+  const listingsForHome = ListingData.slice(0, 3);
+  console.log(listingsForHome);
 
   return (
     <section className="listings-section">
@@ -97,19 +59,18 @@ const ListingsHome: React.FC = () => {
           </h3>
         </div>
         <div className="listings-cards">
-          {properties.map((property) => (
+          {listingsForHome.map((property) => (
             <div className="property-card" key={property.id}>
               <div className="property-card-image">
-                <img src={property.image} alt={property.description} />
+                <img src={property.image} alt={property.shortDesc} />
               </div>
               <div className="property-card-info">
                 <h1>
-                  ${" "}
                   {propertyOption === "All" || propertyOption === "Sale"
-                    ? property.price
-                    : property.rent}
+                    ? formattedPrice({ price: property.salePrice })
+                    : formattedPrice({ price: property.rentPrice })}
                 </h1>
-                <h2>{property.description}</h2>
+                <h2>{property.shortDesc}</h2>
                 <h3>{property.address}</h3>
                 <div className="property-baths-beds">
                   <div className="property-bedrooms">
