@@ -93,7 +93,7 @@ const ListingsScrollable: React.FC = () => {
                     </div>
                   </div>
                   <div className="listing-card-info">
-                    <h1>{formattedPrice({ price: listing.salePrice })}</h1>
+                    <h1>{formattedPrice({ price: listing.rentPrice })}</h1>
                     <h2>{listing.address}</h2>
                     <h3>{listing.shortDesc}</h3>
                     <div className="listing-card-baths-beds">
