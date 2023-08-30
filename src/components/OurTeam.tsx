@@ -5,35 +5,35 @@ import BusinessMan1 from "../assets/ourTeam/BusinessMan1.jpg";
 import BusinessMan2 from "../assets/ourTeam/BusinessMan2.jpg";
 import BusinessWoman1 from "../assets/ourTeam/BusinessWoman1.jpg";
 import BusinessWoman2 from "../assets/ourTeam/BusinessWoman2.jpg";
+interface OurTeam {
+  fullName: string;
+  position: string;
+  img: string;
+}
+export const TeamMembers: OurTeam[] = [
+  {
+    fullName: "Brendon M.",
+    position: "CEO & Founder",
+    img: BusinessMan1,
+  },
+  {
+    fullName: "Jodi S.",
+    position: "Real Estate Developer",
+    img: BusinessWoman1,
+  },
+  {
+    fullName: "Justin R.",
+    position: "Listing Agent",
+    img: BusinessMan2,
+  },
+  {
+    fullName: "Susan S.",
+    position: "Buyer's Agent",
+    img: BusinessWoman2,
+  },
+];
 
 const OurTeam: React.FC = () => {
-  interface OurTeam {
-    fullName: string;
-    position: string;
-    img: string;
-  }
-  const TeamMembers: OurTeam[] = [
-    {
-      fullName: "Brendon M.",
-      position: "CEO & Founder",
-      img: BusinessMan1,
-    },
-    {
-      fullName: "Jodi S.",
-      position: "Real Estate Developer",
-      img: BusinessWoman1,
-    },
-    {
-      fullName: "Justin R.",
-      position: "Listing Agent",
-      img: BusinessMan2,
-    },
-    {
-      fullName: "Susan S.",
-      position: "Buyer's Agent",
-      img: BusinessWoman2,
-    },
-  ];
   return (
     <section className="our-team-section">
       <div className="our-team-container">
