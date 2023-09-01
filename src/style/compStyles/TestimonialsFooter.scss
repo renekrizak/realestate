@@ -229,3 +229,146 @@ footer {
     }
   }
 }
+
+@media (max-width: 1050px) and (min-width: 800px) {
+  .testimonials-container {
+    width: 85%;
+    .testimonials-text {
+      width: 40%;
+    }
+  }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  .testimonials-container {
+    width: 95%;
+    .testimonials-text {
+      width: 50%;
+    }
+  }
+
+  .testimonials-card-content {
+    .card-reviewer {
+      width: 90%;
+    }
+    .card-testimony {
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) and (min-width: 300px) {
+  .testimonials-section {
+    height: 90rem;
+  }
+  .testimonials-container {
+    width: 95%;
+    flex-direction: column;
+    .testimonials-text {
+      width: 100%;
+      height: 50%;
+    }
+    .testimonials-card-container {
+      width: 100%;
+      height: 50%;
+      align-items: center;
+      .testimonials-card-inner-container {
+        width: 100%;
+      }
+      .testimonials-card {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .testimonials-card-current {
+          width: 100%;
+          height: 10%;
+          ul {
+            flex-direction: row;
+            li {
+              height: 10px;
+              width: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-container {
+      width: 95%;
+      .footer-discovery {
+        display: none;
+      }
+      .footer-contact {
+        width: 30%;
+        h2 {
+          font-size: 1.5rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+        .footer-contact-email-phone {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.5rem;
+
+          h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) and (min-width: 600px) {
+  footer {
+    .footer-container {
+      width: 95%;
+      .footer-contact {
+        h2 {
+          font-size: 1.5rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+      .footer-contact-email-phone {
+        flex-direction: column;
+        text-align: center;
+        h3 {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1150px) and (min-width: 950px) {
+  footer {
+    .footer-container {
+      width: 95%;
+      .footer-contact {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1450px) and (min-width: 1150px) {
+  footer {
+    .footer-container {
+      width: 95%;
+      .footer-contact {
+        h3 {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}

@@ -201,6 +201,7 @@
   .hero-layout {
     width: 90%;
     overflow: visible;
+    margin-top: 3rem;
   }
   .hero-content {
     flex-direction: column;
@@ -244,10 +245,13 @@
     }
   }
   .happy-customers {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: none;
+    border: 1px solid black;
   }
   .listings-card {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: none;
+    border: 1px solid black;
+    overflow: hidden;
   }
 }
 

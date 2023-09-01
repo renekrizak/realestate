@@ -110,3 +110,79 @@
     }
   }
 }
+
+@media (max-width: 1050px) and (min-width: 700px) {
+  .our-team-container {
+    width: 95%;
+  }
+
+  .our-team-cards {
+    width: 100%;
+    .our-team-card {
+      .our-team-card-text {
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+  .our-team-section {
+    height: 140rem;
+  }
+  .our-team-container {
+    width: 95%;
+  }
+
+  .our-team-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .our-team-card {
+      width: 45%;
+      height: 45%;
+      .our-team-card-image {
+        height: 65%;
+      }
+      .our-team-card-text {
+        height: 35%;
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) and (min-width: 300px) {
+  .our-team-section {
+    height: 150rem;
+  }
+  .our-team-container {
+    width: 95%;
+    height: 100%;
+  }
+  .our-team-text {
+    height: 15%;
+  }
+
+  .our-team-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 85%;
+    width: 95%;
+    .our-team-card {
+      width: 45%;
+      height: 45%;
+      .our-team-card-image {
+        height: 65%;
+      }
+      .our-team-card-text {
+        height: 35%;
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
