@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
           ))}
-          <li onClick={() => hamburgerMenu()}>
+          <li onClick={() => hamburgerMenu()} className="hamburger-menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="3em"
