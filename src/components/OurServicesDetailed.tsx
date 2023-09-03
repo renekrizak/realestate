@@ -105,7 +105,7 @@ function servicesDetailed() {
                     <p>{item.text}</p>
                   </div>
                 </div>
-                <div className="services-agent-info">
+                <div className="services-agent-info" key={item.title}>
                   <div className="agent-info-image">
                     <img src={item.img} alt={item.fullName} />
                   </div>

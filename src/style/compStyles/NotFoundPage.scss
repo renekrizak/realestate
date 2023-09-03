@@ -1,0 +1,13 @@
+@use "../styles.scss" as *;
+
+.not-found-page {
+  width: 100%;
+  height: calc(100vh - (6vh + 30rem));
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  h1 {
+    color: $blue;
+    font-size: 5rem;
+  }
+}

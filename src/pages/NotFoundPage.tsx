@@ -1,16 +1,18 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import { Footer } from "../components/TestimonialsFooter";
-import AboutUs from "../components/AboutUs";
+import "../style/compStyles/NotFoundPage.scss";
 
-const About = () => {
+const NotFoundPage = () => {
   return (
     <>
       <Navbar></Navbar>
-      <AboutUs></AboutUs>
+      <div className="not-found-page">
+        <h1>This page does not exist yet.</h1>
+      </div>
       <Footer></Footer>
     </>
   );
 };
 
-export default About;
+export default NotFoundPage;

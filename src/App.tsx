@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
 import PropertyDetailed from "./pages/PropertyDetailed";
 import { ListingData } from "./data/ListingsData";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFoundPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/listings" element={<Listings />} />
           {ListingData.map((listingData) => (
